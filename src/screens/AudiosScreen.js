@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { ScrollView, Text } from 'react-native'
 
+import AlbumList from '../components/AlbumList'
+
 const SCREEN_NAME = 'Audios'
 
 class AudiosScreen extends Component {
@@ -12,6 +14,7 @@ class AudiosScreen extends Component {
         return (
             <ScrollView>
                 <Text>{SCREEN_NAME}</Text>
+                <AlbumList/>
             </ScrollView>
         )
     }
