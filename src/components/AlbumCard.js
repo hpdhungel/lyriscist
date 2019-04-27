@@ -1,26 +1,29 @@
 import React from 'react'
-import { View, Image } from 'react-native'
+import { View, Image, TouchableOpacity } from 'react-native'
 
 import { Card, ListItem } from 'react-native-elements'
+import { withNavigation } from 'react-navigation'
 
 const AlbumCard = props => {
   const { album } = props
-    return (
+  const onAlbumPress = () => props.navigation.navigate('AlbumDetail', { album })
+  return (
+    <TouchableOpacity onPress={onAlbumPress}>
       <Card containerStyle={styles.shadow}>
         <View style={styles.container}>
           <Image
             source={{ uri: album.coverArt }}
-            style={{ width: 100, height: 100, alignSelf: 'center' }}/>
+            style={{ width: 100, height: 100 }}/>
           <View style={{ flex: 1 }}>
             <ListItem
-              onPress={this.onPress}
               titleStyle={styles.nameContainer}
               title={album.title}
               subtitle={'Details'}/>
           </View>
         </View>
       </Card>
-    )
+    </TouchableOpacity>
+  )
 }
 
 const styles = {
@@ -43,4 +46,4 @@ const styles = {
   }
 }
 
-export default AlbumCard
+export default withNavigation(AlbumCard)

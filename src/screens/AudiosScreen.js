@@ -6,17 +6,17 @@ import AlbumList from '../components/AlbumList'
 const SCREEN_NAME = 'Audios'
 
 class AudiosScreen extends Component {
-    static navigationOptions = {
-        title: SCREEN_NAME
-    }
+  static navigationOptions = {
+    title: SCREEN_NAME
+  }
 
-    render() {
-        return (
-            <ScrollView>
-                <AlbumList/>
-            </ScrollView>
-        )
-    }
+  render () {
+    return (
+      <ScrollView>
+        <AlbumList/>
+      </ScrollView>
+    )
+  }
 }
 
 export default AudiosScreen

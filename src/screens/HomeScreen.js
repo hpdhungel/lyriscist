@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import { Image, ScrollView, View, TouchableHighlight } from 'react-native'
+import { Dimensions, Image, View, TouchableHighlight } from 'react-native'
 
 import { NavigationActions } from 'react-navigation'
+
+const DIM = Dimensions.get('window')
 
 class HomeScreen extends Component {
   static navigationOptions = {
@@ -21,16 +23,15 @@ class HomeScreen extends Component {
 
   render () {
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          <TouchableHighlight style={{ flex: 1 }} onPress={this.onImagePress}>
-            <Image
-              style={{ width: 380, height: 250 }}
-              source={{ uri: 'https://d2g8igdw686xgo.cloudfront.net/37806502_155539211748298_r.jpg' }}
-            />
-          </TouchableHighlight>
-        </View>
-      </ScrollView>
+      <View style={styles.container}>
+        <TouchableHighlight onPress={this.onImagePress}>
+          <Image
+            resizeMode='contain'
+            style={{ alignSelf: 'center', height: DIM.height * 0.5, width: DIM.width * 0.8 }}
+            source={require('../assets/sourav2020.jpg')}
+          />
+        </TouchableHighlight>
+      </View>
     )
   }
 }

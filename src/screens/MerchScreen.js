@@ -1,20 +1,17 @@
 import React, { Component } from 'react'
-import { ScrollView, Text } from 'react-native'
 
-const SCREEN_NAME = 'Merch'
+import MerchView from '../components/MerchView'
+
+const SCREEN_NAME = 'Merchandise'
 
 class MerchScreen extends Component {
-    static navigationOptions = {
-        title: SCREEN_NAME
-    }
+  static navigationOptions = {
+    title: SCREEN_NAME
+  }
 
-    render() {
-        return (
-            <ScrollView>
-                <Text>{SCREEN_NAME}</Text>
-            </ScrollView>
-        )
-    }
+  render () {
+    return <MerchView/>
+  }
 }
 
 export default MerchScreen
