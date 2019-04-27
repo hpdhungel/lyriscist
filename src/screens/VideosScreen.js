@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import { ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
+
+import VideoList from '../components/VideoList'
 
 const SCREEN_NAME = 'Videos'
 
@@ -11,7 +13,7 @@ class VideosScreen extends Component {
     render() {
         return (
             <ScrollView>
-                <Text>{SCREEN_NAME}</Text>
+                <VideoList/>
             </ScrollView>
         )
     }

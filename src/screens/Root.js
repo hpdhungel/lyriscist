@@ -1,4 +1,3 @@
-
 import React from 'react'
 import { createBottomTabNavigator, createAppContainer, createStackNavigator } from 'react-navigation'
 
@@ -8,6 +7,7 @@ import Home from './HomeScreen'
 import Audios from './AudiosScreen'
 import Merch from './MerchScreen'
 import Videos from './VideosScreen'
+import WebPageModal from '../components/WebPageModal'
 
 const HomeScreen = createStackNavigator({
     Home: Home
@@ -25,6 +25,9 @@ const VideosScreen = createStackNavigator({
     Videos: Videos
 })
 
+export const WebPageModalScreen = createStackNavigator({
+    WebPageModal: { screen: WebPageModal }
+})
 
 const TabNavigator = createBottomTabNavigator(
     {
@@ -41,7 +44,7 @@ const TabNavigator = createBottomTabNavigator(
                 if (routeName === 'Home') {
                     iconName = 'ios-home'
                 } else if (routeName === 'Audios') {
-                    iconName = 'os-musical-notes'
+                    iconName = 'ios-musical-notes'
                 } else if (routeName === 'Videos') {
                     iconName = 'youtube-play'
                     iconType = 'font-awesome'
@@ -61,7 +64,8 @@ const TabNavigator = createBottomTabNavigator(
 
 const RootStack = createStackNavigator(
     {
-        Main: TabNavigator
+        Main: TabNavigator,
+        WebPageModal: WebPageModalScreen
     },
     {
         mode: 'modal',

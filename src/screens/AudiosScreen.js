@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { ScrollView, Text } from 'react-native'
+import { ScrollView } from 'react-native'
 
 import AlbumList from '../components/AlbumList'
 
@@ -13,7 +13,6 @@ class AudiosScreen extends Component {
     render() {
         return (
             <ScrollView>
-                <Text>{SCREEN_NAME}</Text>
                 <AlbumList/>
             </ScrollView>
         )
