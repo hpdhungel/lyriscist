@@ -59,6 +59,7 @@
 		E76B2F2057CC47BA8CFF0AD5 /* libRNGestureHandler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C1694D3CEB18459482CF1A12 /* libRNGestureHandler.a */; };
 		8FD848793B1242C0B93451A2 /* libRNGestureHandler-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DD0B8346F2044FCB5E33721 /* libRNGestureHandler-tvOS.a */; };
 		7C01AAEFF9FA46C3AC5B9B40 /* libRNCWebView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CB4DB8936F44582A5073F1F /* libRNCWebView.a */; };
+		3E88A306DAC94547854D76F1 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8777DD572A454EFBBE27CADB /* Fontisto.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -389,6 +390,7 @@
 		1DD0B8346F2044FCB5E33721 /* libRNGestureHandler-tvOS.a */ = {isa = PBXFileReference; name = "libRNGestureHandler-tvOS.a"; path = "libRNGestureHandler-tvOS.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
 		41CC964DEBB34C04B3DEAA87 /* RNCWebView.xcodeproj */ = {isa = PBXFileReference; name = "RNCWebView.xcodeproj"; path = "../node_modules/react-native-webview/ios/RNCWebView.xcodeproj"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.pb-project; explicitFileType = undefined; includeInIndex = 0; };
 		8CB4DB8936F44582A5073F1F /* libRNCWebView.a */ = {isa = PBXFileReference; name = "libRNCWebView.a"; path = "libRNCWebView.a"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = archive.ar; explicitFileType = undefined; includeInIndex = 0; };
+		8777DD572A454EFBBE27CADB /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -680,6 +682,7 @@
 				E64E5996E1E946428EDC9902 /* Octicons.ttf */,
 				E44D5BD0FB1646BD90B387C1 /* SimpleLineIcons.ttf */,
 				D1B0658284FE4CEF901AFE03 /* Zocial.ttf */,
+				8777DD572A454EFBBE27CADB /* Fontisto.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1146,6 +1149,7 @@
 				7B8D5D74D22C442B8ED671BB /* Octicons.ttf in Resources */,
 				4343FFDC5BF241129EA05E29 /* SimpleLineIcons.ttf in Resources */,
 				282DB8AD73904ED2A7501F5C /* Zocial.ttf in Resources */,
+				3E88A306DAC94547854D76F1 /* Fontisto.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
